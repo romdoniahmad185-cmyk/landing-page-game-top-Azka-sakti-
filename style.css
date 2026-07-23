@@ -1,0 +1,1979 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#0f1117;
+
+    color:#fff;
+
+    overflow-x:hidden;
+
+}
+
+
+/* ==========================================
+   ROOT
+========================================== */
+
+:root{
+
+  --primary:#38BDF8;
+
+    --secondary:#4FA3E3;
+
+--dark:#151823;
+
+--card:#1b2030;
+
+--border:#2b3148;
+
+--text:#ffffff;
+
+--text2:#b8bfd6;
+
+--shadow:0 15px 40px rgba(0,0,0,.35);
+
+--radius:18px;
+
+}
+
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container{
+
+width:90%;
+
+max-width:1300px;
+
+margin:auto;
+
+}
+
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+header{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+z-index:999;
+
+backdrop-filter:blur(12px);
+
+background:rgba(12,15,22,.75);
+
+border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+.navbar{
+
+height:80px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+  margin-left: 2%;
+
+font-size:28px;
+
+font-weight:700;
+
+color:#fff;
+
+}
+
+.logo img {
+  margin-left : 2%;
+  width : 50px;
+  height: 50px;
+}
+
+.logo i{
+
+font-size:34px;
+
+color:var(--primary);
+
+}
+.logo span {
+  color: var(--primary);
+}
+.nav-menu{
+
+display:flex;
+
+list-style:none;
+
+gap:35px;
+
+}
+
+.nav-menu a{
+
+text-decoration:none;
+
+color:#ddd;
+
+font-size:15px;
+
+transition:.3s;
+
+}
+
+.nav-menu a:hover{
+
+color:var(--primary);
+
+}
+
+.nav-right{
+
+display:flex;
+
+gap:12px;
+
+}
+
+.btn-login{
+
+padding:12px 22px;
+
+border:none;
+
+background:transparent;
+
+border:1px solid var(--primary);
+
+color:#fff;
+
+border-radius:12px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.btn-login:hover{
+
+background:var(--primary);
+
+}
+
+.btn-register{
+
+padding:12px 24px;
+
+background:var(--primary);
+
+border:none;
+
+color:white;
+
+border-radius:12px;
+
+cursor:pointer;
+
+box-shadow:var(--shadow);
+
+transition:.35s;
+
+}
+
+.btn-register:hover{
+
+transform:translateY(-4px);
+
+}
+
+.hamburger{
+
+display:none;
+margin-right: 5%;
+font-size:32px;
+color: var(--primary);
+cursor:pointer;
+
+}
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero{
+
+margin-top:80px;
+
+padding:50px 0;
+
+}
+
+.heroSwiper{
+
+border-radius:25px;
+
+overflow:hidden;
+
+box-shadow:var(--shadow);
+
+}
+
+.swiper-slide{
+
+position:relative;
+
+height:500px;
+
+}
+
+.swiper-slide img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+}
+
+.hero-content{
+
+position:absolute;
+
+left:70px;
+
+top:50%;
+
+transform:translateY(-50%);
+
+max-width:520px;
+
+}
+
+.hero-content h1{
+
+font-size:55px;
+
+line-height:65px;
+
+margin-bottom:20px;
+
+font-weight:800;
+
+}
+
+.hero-content p{
+
+font-size:18px;
+
+color:#ddd;
+
+margin-bottom:35px;
+
+}
+
+.hero-btn{
+
+display:inline-block;
+
+padding:16px 40px;
+
+background:var(--primary);
+
+color:white;
+
+text-decoration:none;
+
+border-radius:14px;
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+.hero-btn:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 15px 40px rgba(123,62,255,.4);
+
+}
+
+
+/* ==========================================
+SEARCH
+========================================== */
+
+.search-section{
+
+padding:70px 0;
+
+}
+
+.search-box{
+
+background:var(--card);
+
+border-radius:18px;
+
+display:flex;
+
+align-items:center;
+
+padding:18px 25px;
+
+box-shadow:var(--shadow);
+
+}
+
+.search-box i{
+
+font-size:25px;
+
+color:var(--primary);
+
+margin-right:15px;
+
+}
+
+.search-box input{
+
+width:100%;
+
+border:none;
+
+background:none;
+
+outline:none;
+
+font-size:17px;
+
+color:white;
+
+}
+
+.search-box input::placeholder{
+
+color:#8d96b3;
+
+}
+
+
+/* ==========================================
+CATEGORY
+========================================== */
+
+.category{
+
+padding:20px 0 80px;
+
+}
+
+.category h2{
+
+font-size:34px;
+
+margin-bottom:35px;
+
+}
+
+.category-grid{
+
+display:grid;
+
+grid-template-columns:repeat(5,1fr);
+
+gap:20px;
+
+}
+
+.category-card{
+
+background:var(--card);
+
+padding:35px;
+
+text-align:center;
+
+border-radius:18px;
+
+transition:.35s;
+
+cursor:pointer;
+
+border:1px solid transparent;
+
+}
+
+.category-card:hover{
+
+transform:translateY(-10px);
+
+border-color:var(--primary);
+
+}
+
+.category-card i{
+
+font-size:42px;
+
+color:var(--primary);
+
+margin-bottom:18px;
+
+}
+
+.category-card p{
+
+font-size:17px;
+
+font-weight:600;
+
+}
+/*====================================================
+                GAME SECTION
+====================================================*/
+
+.games{
+    padding:80px 0;
+}
+
+.games h2{
+    font-size:34px;
+    margin-bottom:40px;
+}
+
+.game-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.game-card{
+
+    background:var(--card);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+    border:1px solid transparent;
+
+}
+
+.game-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 15px 35px rgba(123,62,255,.25);
+
+}
+
+.game-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.game-info{
+
+    padding:22px;
+
+}
+
+.game-info h3{
+
+    margin-bottom:10px;
+
+    font-size:22px;
+
+}
+
+.game-info p{
+
+    color:var(--text2);
+
+    margin-bottom:20px;
+
+}
+
+.game-info button{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:var(primary);
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.game-info button:hover{
+
+    transform:scale(1.04);
+
+}
+
+/*====================================================
+                PROMO
+====================================================*/
+
+.promo{
+
+    padding:80px 0;
+
+}
+
+.section-title{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+.section-title h2{
+
+    font-size:34px;
+
+}
+
+.section-title a{
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.promo-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.promo-card{
+
+    background:var(--card);
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    transition:.35s;
+
+}
+
+.promo-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.promo-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.promo-content{
+
+    padding:22px;
+
+}
+
+.promo-content span{
+
+    color:#ffb84d;
+
+    font-weight:600;
+
+}
+
+.promo-content h3{
+
+    margin:15px 0;
+
+}
+
+.promo-content p{
+
+    color:var(--text2);
+
+}
+
+/*====================================================
+                PAYMENT
+====================================================*/
+
+.payment{
+
+    padding:80px 0;
+
+}
+
+.payment h2{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+    font-size:34px;
+
+}
+
+.payment-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+
+    gap:20px;
+
+}
+
+.payment-item{
+
+    background:var(--card);
+
+    padding:25px;
+
+    border-radius:16px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.35s;
+
+}
+
+.payment-item:hover{
+
+    transform:translateY(-8px);
+
+    background:#242c40;
+
+}
+
+.payment-item img{
+
+    max-width:80px;
+
+}
+
+/*====================================================
+                HOW TO TOPUP
+====================================================*/
+
+.how{
+
+    padding:80px 0;
+
+}
+
+.how h2{
+
+    text-align:center;
+
+    font-size:34px;
+
+    margin-bottom:45px;
+
+}
+
+.step-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.step-card{
+
+    background:var(--card);
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.step-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.number{
+
+    width:60px;
+
+    height:60px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.step-card h3{
+
+    margin-bottom:15px;
+
+}
+
+.step-card p{
+
+    color:var(--text2);
+
+    line-height:1.7;
+
+}
+
+/*====================================================
+                ADVANTAGE
+====================================================*/
+
+.advantage{
+
+    padding:80px 0;
+
+}
+
+.advantage h2{
+
+    text-align:center;
+
+    margin-bottom:45px;
+
+    font-size:34px;
+
+}
+
+.advantage-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.advantage-card{
+
+    background:var(--card);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.advantage-card:hover{
+
+    transform:translateY(-10px);
+
+    border:1px solid var(--primary);
+
+}
+
+.advantage-card i{
+
+    font-size:52px;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.advantage-card h3{
+
+    margin-bottom:15px;
+
+}
+
+.advantage-card p{
+
+    color:var(--text2);
+
+    line-height:1.7;
+
+}
+/*====================================================
+                STATISTICS
+====================================================*/
+
+.stats{
+
+    padding:90px 0;
+
+    background:linear-gradient(135deg,#141926,#1b2030);
+
+}
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.stat-box{
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.06);
+
+    backdrop-filter:blur(15px);
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.stat-box:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 15px 35px rgba(123,62,255,.25);
+
+}
+
+.stat-box h2{
+
+    font-size:42px;
+
+    color:var(--primary);
+
+    margin-bottom:12px;
+
+}
+
+.stat-box p{
+
+    color:var(--text2);
+
+    font-size:16px;
+
+}
+
+/*====================================================
+                TESTIMONIAL
+====================================================*/
+
+.testimonial{
+
+    padding:90px 0;
+
+}
+
+.testimonial h2{
+
+    text-align:center;
+
+    font-size:36px;
+
+    margin-bottom:45px;
+
+}
+
+.testimonial-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.testimonial-card{
+
+    background:var(--card);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    transition:.35s;
+
+    border:1px solid transparent;
+
+}
+
+.testimonial-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--primary);
+
+}
+
+.testimonial-card p{
+
+    color:var(--text2);
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.testimonial-card h4{
+
+    color:#fff;
+
+}
+
+/*====================================================
+                    FAQ
+====================================================*/
+
+.faq{
+
+    padding:90px 0;
+
+}
+
+.faq h2{
+
+    text-align:center;
+
+    font-size:36px;
+
+    margin-bottom:45px;
+
+}
+
+.faq-item{
+
+    background:var(--card);
+
+    border-radius:18px;
+
+    margin-bottom:18px;
+
+    padding:28px;
+
+    transition:.35s;
+
+    border:1px solid transparent;
+
+}
+
+.faq-item:hover{
+
+    border-color:var(--primary);
+
+}
+
+.faq-item h3{
+
+    margin-bottom:15px;
+
+    font-size:20px;
+
+}
+
+.faq-item p{
+
+    color:var(--text2);
+
+    line-height:1.8;
+
+}
+
+/*====================================================
+                FOOTER
+====================================================*/
+
+footer{
+
+    background:#0b0d13;
+
+    padding:80px 0 30px;
+
+    margin-top:80px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr 1fr;
+
+    gap:40px;
+
+}
+
+.footer-col h2{
+
+    margin-bottom:20px;
+
+}
+
+.footer-col h3{
+
+    margin-bottom:20px;
+
+}
+
+.footer-col p{
+
+    color:var(--text2);
+
+    line-height:1.8;
+
+}
+
+.footer-col ul{
+
+    list-style:none;
+
+}
+
+.footer-col ul li{
+
+    margin-bottom:12px;
+
+}
+
+.footer-col ul li a{
+
+    color:var(--text2);
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-col ul li a:hover{
+
+    color:var(--primary);
+
+}
+
+.social{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.social a{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:var(--card);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:20px;
+
+    transition:.35s;
+
+    text-decoration:none;
+
+}
+
+.social a:hover{
+
+    background:var(--primary);
+
+    transform:translateY(-5px);
+
+}
+
+.copyright{
+
+    margin-top:50px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding-top:25px;
+
+    text-align:center;
+
+    color:var(--text2);
+
+}
+
+/*====================================================
+                BACK TO TOP
+====================================================*/
+
+.back-to-top{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#7B3EFF,#AA72FF);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    box-shadow: var(--primary);
+
+    transition:.35s;
+
+    opacity:0;
+
+    visibility:hidden;
+
+}
+
+.back-to-top.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.back-to-top:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/*====================================================
+                ANIMATION
+====================================================*/
+
+.game-card,
+.category-card,
+.promo-card,
+.payment-item,
+.step-card,
+.advantage-card,
+.stat-box,
+.testimonial-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+/*====================================================
+            RESPONSIVE - TABLET
+====================================================*/
+
+@media (max-width:1024px){
+
+.container{
+
+    width:94%;
+
+}
+
+.hero-content{
+
+    left:40px;
+
+    max-width:430px;
+
+}
+
+.hero-content h1{
+
+    font-size:42px;
+
+    line-height:52px;
+
+}
+
+.category-grid{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.promo-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.step-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.advantage-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.stats-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.testimonial-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.footer-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/*====================================================
+            RESPONSIVE - MOBILE
+====================================================*/
+
+@media (max-width:768px){
+
+.nav-menu{
+
+    position:fixed;
+
+    top:80px;
+
+    right:-100%;
+
+    width:270px;
+
+    height:calc(100vh - 80px);
+
+    background:#181d2b;
+
+    flex-direction:column;
+
+    padding:40px 25px;
+
+    transition:.35s;
+
+    gap:25px;
+
+    box-shadow:-10px 0 25px rgba(0,0,0,.3);
+
+}
+
+.nav-menu.active{
+
+    right:0;
+
+}
+
+.nav-right{
+
+    display:none;
+
+}
+
+.hamburger{
+
+    display:block;
+
+}
+
+.hero{
+
+    padding:20px 0;
+
+}
+
+.swiper-slide{
+
+    height:420px;
+
+}
+
+.hero-content{
+
+    left:25px;
+
+    right:25px;
+
+}
+
+.hero-content h1{
+
+    font-size:34px;
+
+    line-height:42px;
+
+}
+
+.hero-content p{
+
+    font-size:15px;
+
+}
+
+.hero-btn{
+
+    padding:14px 28px;
+
+}
+
+.category-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.game-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.promo-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.payment-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.step-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.advantage-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.stats-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.testimonial-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.footer-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.footer-col{
+
+    text-align:center;
+
+}
+
+.social{
+
+    justify-content:center;
+
+}
+
+}
+
+/*====================================================
+            EXTRA SMALL DEVICE
+====================================================*/
+
+@media (max-width:480px){
+
+.logo{
+
+    font-size:22px;
+
+}
+
+.logo i{
+
+    font-size:26px;
+
+}
+
+.hero-content h1{
+
+    font-size:28px;
+
+    line-height:36px;
+
+}
+
+.hero-content p{
+
+    font-size:14px;
+
+}
+
+.category-card{
+
+    padding:22px;
+
+}
+
+.category-card i{
+
+    font-size:34px;
+
+}
+
+.games h2,
+.promo h2,
+.payment h2,
+.how h2,
+.advantage h2,
+.stats h2,
+.testimonial h2,
+.faq h2{
+
+    font-size:28px;
+
+}
+
+.search-box{
+
+    padding:14px 18px;
+
+}
+
+.btn-login,
+.btn-register{
+
+    padding:10px 18px;
+
+}
+
+}
+
+/*====================================================
+            CUSTOM SCROLLBAR
+====================================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111520;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:linear-gradient(
+        180deg,
+        #7B3EFF,
+        #A764FF
+    );
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#9b67ff;
+
+}
+
+/*====================================================
+            TEXT SELECTION
+====================================================*/
+
+::selection{
+
+    background:#7B3EFF;
+
+    color:white;
+
+}
+
+/*====================================================
+            IMAGE
+====================================================*/
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/*====================================================
+            BUTTON
+====================================================*/
+
+button{
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+/*====================================================
+            LINK
+====================================================*/
+
+a{
+
+    transition:.3s;
+
+}
+
+/*====================================================
+            SECTION TITLE
+====================================================*/
+
+section{
+
+    position:relative;
+
+}
+
+section h2{
+
+    font-weight:700;
+
+}
+
+/*====================================================
+            HOVER GLOW
+====================================================*/
+
+.game-card:hover,
+.category-card:hover,
+.payment-item:hover,
+.promo-card:hover,
+.step-card:hover,
+.advantage-card:hover{
+
+    box-shadow:
+    0 10px 30px rgba(123,62,255,.25),
+    0 0 20px rgba(123,62,255,.18);
+
+}
+
+/*====================================================
+            CARD BORDER
+====================================================*/
+
+.game-card,
+.category-card,
+.payment-item,
+.step-card,
+.advantage-card,
+.testimonial-card,
+.stat-box,
+.promo-card{
+
+    border:1px solid rgba(255,255,255,.05);
+
+}
+
+/*====================================================
+            INPUT FOCUS
+====================================================*/
+
+input:focus{
+
+    outline:none;
+
+}
+
+/*====================================================
+            SMOOTH
+====================================================*/
+
+*{
+
+    transition:
+    background .25s,
+    color .25s,
+    border-color .25s;
+
+}
+
+/*====================================================
+            END STYLE
+====================================================*/
+.favorite{
+    position:absolute;
+    top:15px;
+    right:15px;
+    width:40px;
+    height:40px;
+    background:rgba(0,0,0,.5);
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    z-index:10;
+}
+
+.game-card{
+    position:relative;
+}
+
+.toast{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    background:#7B3EFF;
+    color:#fff;
+    padding:14px 22px;
+    border-radius:12px;
+    opacity:0;
+    transform:translateY(30px);
+    transition:.3s;
+    z-index:9999;
+}
+
+.toast.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+button{
+    background-color: var(--primary);
+    position:relative;
+    overflow:hidden;
+}
+
+.ripple{
+    position:absolute;
+    width:10px;
+    height:10px;
+    background:rgba(255,255,255,.5);
+    border-radius:50%;
+    transform:translate(-50%,-50%);
+    animation:ripple .7s linear;
+}
+
+@keyframes ripple{
+    from{
+        width:10px;
+        height:10px;
+        opacity:.8;
+    }
+    to{
+        width:300px;
+        height:300px;
+        opacity:0;
+    }
+}
+/*=============================
+        THEME BUTTON
+=============================*/
+
+.theme-button{
+
+position:fixed;
+
+bottom:95px;
+
+right:25px;
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:#7B3EFF;
+
+color:#fff;
+
+font-size:22px;
+
+cursor:pointer;
+
+z-index:999;
+
+box-shadow:0 15px 30px rgba(123,62,255,.3);
+
+}
+
+/*=============================
+        PROGRESS BAR
+=============================*/
+
+.progress-bar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+height:4px;
+
+background:#7B3EFF;
+
+width:0;
+
+z-index:9999;
+
+}
+
+/*=============================
+        LOADER
+=============================*/
+
+.loader{
+
+position:fixed;
+
+inset:0;
+
+background:#0f1117;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:10000;
+
+transition:.6s;
+
+}
+
+.loader h2{
+
+font-size:50px;
+
+color:#7B3EFF;
+
+}
+
+/*=============================
+        LIGHT MODE
+=============================*/
+
+body.light-mode{
+
+background:#f5f5f5;
+
+color:#222;
+
+}
+
+body.light-mode header{
+
+background:#ffffffee;
+
+}
+
+body.light-mode .game-card,
+body.light-mode .promo-card,
+body.light-mode .category-card,
+body.light-mode .payment-item,
+body.light-mode .step-card,
+body.light-mode .advantage-card,
+body.light-mode .testimonial-card,
+body.light-mode .faq-item,
+body.light-mode .stat-box{
+
+background:#fff;
+
+color:#222;
+
+}
