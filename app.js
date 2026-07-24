@@ -709,3 +709,16 @@ document.addEventListener("keydown",(e)=>{
 =========================================*/
 
 console.log("GameTop Loaded Successfully");
+document.querySelectorAll(".btn-topup").forEach(button => {
+
+    button.addEventListener("click", function(){
+
+        const link = this.dataset.link;
+
+        if(link){
+            window.location.href = link;
+        }
+
+    });
+
+});
